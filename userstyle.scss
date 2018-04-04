@@ -1,0 +1,55 @@
+/* Test on Firefox (both on Windows and Linux) */
+@-moz-document domain("bangumi.bilibili.com"),
+domain("www.bilibili.com"),
+domain("live.bilibili.com") {
+  $resolutions: 720px 810px 900px 1080px;
+
+  .bilibili-player-video {
+    padding: 0px !important;
+  }
+
+  @media screen and (resolution: 1dppx) {
+    /* bilibili live player adjust */
+    .live-room-app .app-content .app-body {
+      max-width: 1594px;
+    }
+  }
+
+  @each $scale in 1.0 1.25 {
+    @media screen and (resolution: #{$scale}dppx) {
+
+      @each $res in $resolutions {
+        $height: $res / $scale;
+        $width: $height / 9 * 16;
+
+        @if $height >= nth($resolutions, 1) {
+          @media (min-width: floor($width / 0.75)) {
+            .bili-wrapper:not(.mini-player) .player,
+            .bangumi-player:not(.mini-player) .player,
+            .bangumi-player:not(.mini-player) {
+              width: $width !important;
+              height: calc(#{$height} + 68px) !important;
+            }
+            .player-box .bili-wrapper:not(.mini-player),
+            .video-box-module .bili-wrapper:not(.mini-player) {
+              width: $width !important;
+            }
+
+            @if $height * $scale >= 1080px {
+              .bangumi-nav-right {
+                transform: translateX(964px);
+              }
+              #index_nav {
+                left: 2025px !important;
+              }
+            }
+
+          }
+        }
+
+      }
+
+    }
+  }
+
+}

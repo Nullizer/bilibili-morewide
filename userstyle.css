@@ -1,0 +1,98 @@
+/* Test on Firefox (both on Windows and Linux) */
+@-moz-document domain("bangumi.bilibili.com"),
+domain("www.bilibili.com"),
+domain("live.bilibili.com") {
+  .bilibili-player-video {
+    padding: 0px !important;
+  }
+  @media screen and (resolution: 1dppx) {
+    /* bilibili live player adjust */
+    .live-room-app .app-content .app-body {
+      max-width: 1594px;
+    }
+  }
+  @media screen and (resolution: 1dppx) and (min-width: 1706px) {
+    .bili-wrapper:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) {
+      width: 1280px !important;
+      height: calc(720px + 68px) !important;
+    }
+    .player-box .bili-wrapper:not(.mini-player),
+    .video-box-module .bili-wrapper:not(.mini-player) {
+      width: 1280px !important;
+    }
+  }
+  @media screen and (resolution: 1dppx) and (min-width: 1920px) {
+    .bili-wrapper:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) {
+      width: 1440px !important;
+      height: calc(810px + 68px) !important;
+    }
+    .player-box .bili-wrapper:not(.mini-player),
+    .video-box-module .bili-wrapper:not(.mini-player) {
+      width: 1440px !important;
+    }
+  }
+  @media screen and (resolution: 1dppx) and (min-width: 2133px) {
+    .bili-wrapper:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) {
+      width: 1600px !important;
+      height: calc(900px + 68px) !important;
+    }
+    .player-box .bili-wrapper:not(.mini-player),
+    .video-box-module .bili-wrapper:not(.mini-player) {
+      width: 1600px !important;
+    }
+  }
+  @media screen and (resolution: 1dppx) and (min-width: 2560px) {
+    .bili-wrapper:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) {
+      width: 1920px !important;
+      height: calc(1080px + 68px) !important;
+    }
+    .player-box .bili-wrapper:not(.mini-player),
+    .video-box-module .bili-wrapper:not(.mini-player) {
+      width: 1920px !important;
+    }
+    .bangumi-nav-right {
+      transform: translateX(964px);
+    }
+    #index_nav {
+      left: 2025px !important;
+    }
+  }
+  @media screen and (resolution: 1.25dppx) and (min-width: 1706px) {
+    .bili-wrapper:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) {
+      width: 1280px !important;
+      height: calc(720px + 68px) !important;
+    }
+    .player-box .bili-wrapper:not(.mini-player),
+    .video-box-module .bili-wrapper:not(.mini-player) {
+      width: 1280px !important;
+    }
+  }
+  @media screen and (resolution: 1.25dppx) and (min-width: 2048px) {
+    .bili-wrapper:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) .player,
+    .bangumi-player:not(.mini-player) {
+      width: 1536px !important;
+      height: calc(864px + 68px) !important;
+    }
+    .player-box .bili-wrapper:not(.mini-player),
+    .video-box-module .bili-wrapper:not(.mini-player) {
+      width: 1536px !important;
+    }
+    .bangumi-nav-right {
+      transform: translateX(964px);
+    }
+    #index_nav {
+      left: 2025px !important;
+    }
+  }
+}
