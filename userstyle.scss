@@ -18,24 +18,25 @@ domain("live.bilibili.com") {
   @each $scale in 1.0 1.25 {
     @media screen and (resolution: #{$scale}dppx) {
 
-      @each $res in $resolutions {
-        $height: $res / $scale;
+      @each $height in $resolutions {
         $width: $height / 9 * 16;
 
-        @if $height >= nth($resolutions, 1) {
-          @media (min-width: floor($width / 0.75)) {
+        @if $height / $scale >= nth($resolutions, 1) {
+          @media (min-width: floor($width / $scale / 0.75)) {
             .bili-wrapper:not(.mini-player) .player,
             .bangumi-player:not(.mini-player) .player,
-            .bangumi-player:not(.mini-player) {
-              width: $width !important;
-              height: calc(#{$height} + 68px) !important;
+            .bangumi-player:not(.mini-player),
+            #bofqi.scontent:not(.newfloat) .player {
+              width: calc(#{$width} / #{$scale}) !important;
+              height: calc(#{$height} / #{$scale} + 68px) !important;
             }
             .player-box .bili-wrapper:not(.mini-player),
-            .video-box-module .bili-wrapper:not(.mini-player) {
-              width: $width !important;
+            .video-box-module .bili-wrapper:not(.mini-player),
+            #bofqi.scontent:not(.newfloat) {
+              width: calc(#{$width} / #{$scale}) !important;
             }
 
-            @if $height * $scale >= 1080px {
+            @if $height >= 1080px {
               .bangumi-nav-right {
                 transform: translateX(964px);
               }

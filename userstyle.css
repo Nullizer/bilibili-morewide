@@ -14,49 +14,57 @@ domain("live.bilibili.com") {
   @media screen and (resolution: 1dppx) and (min-width: 1706px) {
     .bili-wrapper:not(.mini-player) .player,
     .bangumi-player:not(.mini-player) .player,
-    .bangumi-player:not(.mini-player) {
-      width: 1280px !important;
-      height: calc(720px + 68px) !important;
+    .bangumi-player:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) .player {
+      width: calc(1280px / 1) !important;
+      height: calc(720px / 1 + 68px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
-    .video-box-module .bili-wrapper:not(.mini-player) {
-      width: 1280px !important;
+    .video-box-module .bili-wrapper:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) {
+      width: calc(1280px / 1) !important;
     }
   }
   @media screen and (resolution: 1dppx) and (min-width: 1920px) {
     .bili-wrapper:not(.mini-player) .player,
     .bangumi-player:not(.mini-player) .player,
-    .bangumi-player:not(.mini-player) {
-      width: 1440px !important;
-      height: calc(810px + 68px) !important;
+    .bangumi-player:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) .player {
+      width: calc(1440px / 1) !important;
+      height: calc(810px / 1 + 68px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
-    .video-box-module .bili-wrapper:not(.mini-player) {
-      width: 1440px !important;
+    .video-box-module .bili-wrapper:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) {
+      width: calc(1440px / 1) !important;
     }
   }
   @media screen and (resolution: 1dppx) and (min-width: 2133px) {
     .bili-wrapper:not(.mini-player) .player,
     .bangumi-player:not(.mini-player) .player,
-    .bangumi-player:not(.mini-player) {
-      width: 1600px !important;
-      height: calc(900px + 68px) !important;
+    .bangumi-player:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) .player {
+      width: calc(1600px / 1) !important;
+      height: calc(900px / 1 + 68px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
-    .video-box-module .bili-wrapper:not(.mini-player) {
-      width: 1600px !important;
+    .video-box-module .bili-wrapper:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) {
+      width: calc(1600px / 1) !important;
     }
   }
   @media screen and (resolution: 1dppx) and (min-width: 2560px) {
     .bili-wrapper:not(.mini-player) .player,
     .bangumi-player:not(.mini-player) .player,
-    .bangumi-player:not(.mini-player) {
-      width: 1920px !important;
-      height: calc(1080px + 68px) !important;
+    .bangumi-player:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) .player {
+      width: calc(1920px / 1) !important;
+      height: calc(1080px / 1 + 68px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
-    .video-box-module .bili-wrapper:not(.mini-player) {
-      width: 1920px !important;
+    .video-box-module .bili-wrapper:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) {
+      width: calc(1920px / 1) !important;
     }
     .bangumi-nav-right {
       transform: translateX(964px);
@@ -68,25 +76,29 @@ domain("live.bilibili.com") {
   @media screen and (resolution: 1.25dppx) and (min-width: 1706px) {
     .bili-wrapper:not(.mini-player) .player,
     .bangumi-player:not(.mini-player) .player,
-    .bangumi-player:not(.mini-player) {
-      width: 1280px !important;
-      height: calc(720px + 68px) !important;
+    .bangumi-player:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) .player {
+      width: calc(1600px / 1.25) !important;
+      height: calc(900px / 1.25 + 68px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
-    .video-box-module .bili-wrapper:not(.mini-player) {
-      width: 1280px !important;
+    .video-box-module .bili-wrapper:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) {
+      width: calc(1600px / 1.25) !important;
     }
   }
   @media screen and (resolution: 1.25dppx) and (min-width: 2048px) {
     .bili-wrapper:not(.mini-player) .player,
     .bangumi-player:not(.mini-player) .player,
-    .bangumi-player:not(.mini-player) {
-      width: 1536px !important;
-      height: calc(864px + 68px) !important;
+    .bangumi-player:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) .player {
+      width: calc(1920px / 1.25) !important;
+      height: calc(1080px / 1.25 + 68px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
-    .video-box-module .bili-wrapper:not(.mini-player) {
-      width: 1536px !important;
+    .video-box-module .bili-wrapper:not(.mini-player),
+    #bofqi.scontent:not(.newfloat) {
+      width: calc(1920px / 1.25) !important;
     }
     .bangumi-nav-right {
       transform: translateX(964px);
