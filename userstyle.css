@@ -1,12 +1,10 @@
-/* Test on Firefox (both on Windows and Linux) */
-@-moz-document domain("bangumi.bilibili.com"),
-domain("www.bilibili.com"),
-domain("live.bilibili.com") {
+@-moz-document domain('bangumi.bilibili.com'),
+domain('www.bilibili.com'),
+domain('live.bilibili.com') {
   .bilibili-player-video {
     padding: 0px !important;
   }
   @media screen and (resolution: 1dppx) {
-    /* bilibili live player adjust */
     .live-room-app .app-content .app-body {
       max-width: 1594px;
     }
@@ -24,6 +22,17 @@ domain("live.bilibili.com") {
     #bofqi.scontent:not(.newfloat) {
       width: calc(1280px / 1) !important;
     }
+    .player-box .bgray-btn-wrap,
+    .video-box-module .bgray-btn-wrap,
+    .player-wrapper .bgray-btn-wrap {
+      margin-left: 640px;
+    }
+    .bangumi-nav-right {
+      transform: translateX(650px);
+    }
+    .fixed-nav-m {
+      margin-left: 650px;
+    }
   }
   @media screen and (resolution: 1dppx) and (min-width: 1920px) {
     .bili-wrapper:not(.mini-player) .player,
@@ -37,6 +46,17 @@ domain("live.bilibili.com") {
     .video-box-module .bili-wrapper:not(.mini-player),
     #bofqi.scontent:not(.newfloat) {
       width: calc(1440px / 1) !important;
+    }
+    .player-box .bgray-btn-wrap,
+    .video-box-module .bgray-btn-wrap,
+    .player-wrapper .bgray-btn-wrap {
+      margin-left: 720px;
+    }
+    .bangumi-nav-right {
+      transform: translateX(730px);
+    }
+    .fixed-nav-m {
+      margin-left: 730px;
     }
   }
   @media screen and (resolution: 1dppx) and (min-width: 2133px) {
@@ -52,6 +72,17 @@ domain("live.bilibili.com") {
     #bofqi.scontent:not(.newfloat) {
       width: calc(1600px / 1) !important;
     }
+    .player-box .bgray-btn-wrap,
+    .video-box-module .bgray-btn-wrap,
+    .player-wrapper .bgray-btn-wrap {
+      margin-left: 800px;
+    }
+    .bangumi-nav-right {
+      transform: translateX(810px);
+    }
+    .fixed-nav-m {
+      margin-left: 810px;
+    }
   }
   @media screen and (resolution: 1dppx) and (min-width: 2560px) {
     .bili-wrapper:not(.mini-player) .player,
@@ -66,11 +97,16 @@ domain("live.bilibili.com") {
     #bofqi.scontent:not(.newfloat) {
       width: calc(1920px / 1) !important;
     }
-    .bangumi-nav-right {
-      transform: translateX(964px);
+    .player-box .bgray-btn-wrap,
+    .video-box-module .bgray-btn-wrap,
+    .player-wrapper .bgray-btn-wrap {
+      margin-left: 960px;
     }
-    #index_nav {
-      left: 2025px !important;
+    .bangumi-nav-right {
+      transform: translateX(970px);
+    }
+    .fixed-nav-m {
+      margin-left: 970px;
     }
   }
   @media screen and (resolution: 1.25dppx) and (min-width: 1706px) {
@@ -86,6 +122,17 @@ domain("live.bilibili.com") {
     #bofqi.scontent:not(.newfloat) {
       width: calc(1600px / 1.25) !important;
     }
+    .player-box .bgray-btn-wrap,
+    .video-box-module .bgray-btn-wrap,
+    .player-wrapper .bgray-btn-wrap {
+      margin-left: 800px;
+    }
+    .bangumi-nav-right {
+      transform: translateX(810px);
+    }
+    .fixed-nav-m {
+      margin-left: 810px;
+    }
   }
   @media screen and (resolution: 1.25dppx) and (min-width: 2048px) {
     .bili-wrapper:not(.mini-player) .player,
@@ -100,11 +147,16 @@ domain("live.bilibili.com") {
     #bofqi.scontent:not(.newfloat) {
       width: calc(1920px / 1.25) !important;
     }
-    .bangumi-nav-right {
-      transform: translateX(964px);
+    .player-box .bgray-btn-wrap,
+    .video-box-module .bgray-btn-wrap,
+    .player-wrapper .bgray-btn-wrap {
+      margin-left: 960px;
     }
-    #index_nav {
-      left: 2025px !important;
+    .bangumi-nav-right {
+      transform: translateX(970px);
+    }
+    .fixed-nav-m {
+      margin-left: 970px;
     }
   }
 }
