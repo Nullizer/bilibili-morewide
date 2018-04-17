@@ -125,13 +125,13 @@ domain('live.bilibili.com') {
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
     .player-wrapper .bgray-btn-wrap {
-      margin-left: 800px;
+      margin-left: 640px;
     }
     .bangumi-nav-right {
-      transform: translateX(810px);
+      transform: translateX(650px);
     }
     .fixed-nav-m {
-      margin-left: 810px;
+      margin-left: 650px;
     }
   }
   @media screen and (resolution: 1.25dppx) and (min-width: 2048px) {
@@ -150,13 +150,13 @@ domain('live.bilibili.com') {
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
     .player-wrapper .bgray-btn-wrap {
-      margin-left: 960px;
+      margin-left: 768px;
     }
     .bangumi-nav-right {
-      transform: translateX(970px);
+      transform: translateX(778px);
     }
     .fixed-nav-m {
-      margin-left: 970px;
+      margin-left: 778px;
     }
   }
 }

@@ -23,6 +23,7 @@ domain('live.bilibili.com') {
 
       @each $height in $resolutions {
         $width: $height / 9 * 16;
+        $offset: ($width / $scale - $orig-max-width) / 2;
 
         @if $height / $scale >= nth($resolutions, 1) {
           @media (min-width: floor($width / $scale / .75)) {
@@ -44,16 +45,16 @@ domain('live.bilibili.com') {
             .video-box-module,
             .player-wrapper {
               .bgray-btn-wrap {
-                margin-left: 580px + ($width - $orig-max-width) / 2;
+                margin-left: 580px + $offset;
               }
             }
 
             .bangumi-nav-right {
-              transform: translateX(590px + ($width - $orig-max-width) / 2);
+              transform: translateX(590px + $offset);
             }
 
             .fixed-nav-m {
-              margin-left: 590px + ($width - $orig-max-width) / 2;
+              margin-left: 590px + $offset;
             }
 
           }
