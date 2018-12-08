@@ -35,10 +35,24 @@ domain('live.bilibili.com') {
               height: calc(#{$height} / #{$scale} + 68px) !important;
             }
 
+            @if $height >= 1080px {
+              #app #bofqi {
+                width: calc(1600px / #{$scale}) !important;
+                min-height: calc(900px / #{$scale} + 46px) !important;
+              }
+            }
+
+            #app #bofqi.wide {
+              width: calc(#{$width} / #{$scale}) !important;
+              height: calc(#{$height} / #{$scale} + 46px) !important;
+            }
+
             .player-box .bili-wrapper:not(.mini-player),
             .video-box-module .bili-wrapper:not(.mini-player),
-            #bofqi.scontent:not(.newfloat) {
+            #bofqi.scontent:not(.newfloat),
+            #app .v-wrap {
               width: calc(#{$width} / #{$scale}) !important;
+              max-width: calc(#{$width} / #{$scale}) !important;
             }
 
             .player-box,

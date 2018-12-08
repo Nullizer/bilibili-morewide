@@ -17,10 +17,16 @@ domain('live.bilibili.com') {
       width: calc(1280px / 1) !important;
       height: calc(720px / 1 + 68px) !important;
     }
+    #app #bofqi.wide {
+      width: calc(1280px / 1) !important;
+      height: calc(720px / 1 + 46px) !important;
+    }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
-    #bofqi.scontent:not(.newfloat) {
+    #bofqi.scontent:not(.newfloat),
+    #app .v-wrap {
       width: calc(1280px / 1) !important;
+      max-width: calc(1280px / 1) !important;
     }
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
@@ -42,10 +48,16 @@ domain('live.bilibili.com') {
       width: calc(1440px / 1) !important;
       height: calc(810px / 1 + 68px) !important;
     }
+    #app #bofqi.wide {
+      width: calc(1440px / 1) !important;
+      height: calc(810px / 1 + 46px) !important;
+    }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
-    #bofqi.scontent:not(.newfloat) {
+    #bofqi.scontent:not(.newfloat),
+    #app .v-wrap {
       width: calc(1440px / 1) !important;
+      max-width: calc(1440px / 1) !important;
     }
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
@@ -67,10 +79,16 @@ domain('live.bilibili.com') {
       width: calc(1600px / 1) !important;
       height: calc(900px / 1 + 68px) !important;
     }
+    #app #bofqi.wide {
+      width: calc(1600px / 1) !important;
+      height: calc(900px / 1 + 46px) !important;
+    }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
-    #bofqi.scontent:not(.newfloat) {
+    #bofqi.scontent:not(.newfloat),
+    #app .v-wrap {
       width: calc(1600px / 1) !important;
+      max-width: calc(1600px / 1) !important;
     }
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
@@ -92,10 +110,20 @@ domain('live.bilibili.com') {
       width: calc(1920px / 1) !important;
       height: calc(1080px / 1 + 68px) !important;
     }
+    #app #bofqi {
+      width: calc(1600px / 1) !important;
+      min-height: calc(900px / 1 + 46px) !important;
+    }
+    #app #bofqi.wide {
+      width: calc(1920px / 1) !important;
+      height: calc(1080px / 1 + 46px) !important;
+    }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
-    #bofqi.scontent:not(.newfloat) {
+    #bofqi.scontent:not(.newfloat),
+    #app .v-wrap {
       width: calc(1920px / 1) !important;
+      max-width: calc(1920px / 1) !important;
     }
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
@@ -117,10 +145,16 @@ domain('live.bilibili.com') {
       width: calc(1600px / 1.25) !important;
       height: calc(900px / 1.25 + 68px) !important;
     }
+    #app #bofqi.wide {
+      width: calc(1600px / 1.25) !important;
+      height: calc(900px / 1.25 + 46px) !important;
+    }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
-    #bofqi.scontent:not(.newfloat) {
+    #bofqi.scontent:not(.newfloat),
+    #app .v-wrap {
       width: calc(1600px / 1.25) !important;
+      max-width: calc(1600px / 1.25) !important;
     }
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
@@ -142,10 +176,20 @@ domain('live.bilibili.com') {
       width: calc(1920px / 1.25) !important;
       height: calc(1080px / 1.25 + 68px) !important;
     }
+    #app #bofqi {
+      width: calc(1600px / 1.25) !important;
+      min-height: calc(900px / 1.25 + 46px) !important;
+    }
+    #app #bofqi.wide {
+      width: calc(1920px / 1.25) !important;
+      height: calc(1080px / 1.25 + 46px) !important;
+    }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
-    #bofqi.scontent:not(.newfloat) {
+    #bofqi.scontent:not(.newfloat),
+    #app .v-wrap {
       width: calc(1920px / 1.25) !important;
+      max-width: calc(1920px / 1.25) !important;
     }
     .player-box .bgray-btn-wrap,
     .video-box-module .bgray-btn-wrap,
