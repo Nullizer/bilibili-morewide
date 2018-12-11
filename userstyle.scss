@@ -11,6 +11,14 @@ domain('live.bilibili.com') {
     padding: 0px !important;
   }
 
+  #app .player-wrap {
+    height: auto !important;
+  }
+
+  #app #bofqi.wide {
+    position: static !important;
+  }
+
   @media screen and (resolution: 1dppx) {
     // bilibili live player adjust
     .live-room-app .app-content .app-body {
