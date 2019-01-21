@@ -1,4 +1,2 @@
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/Nullizer/bilibili-morewide.svg)](https://greenkeeper.io/)
-
-[Install from userstyles.org](https://userstyles.org/styles/147281/bilibili-morewide)
+[![Build Status](https://travis-ci.org/Nullizer/bilibili-morewide.svg?branch=master)](https://travis-ci.org/Nullizer/bilibili-morewide)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Nullizer/bilibili-morewide)](https://dependabot.com)

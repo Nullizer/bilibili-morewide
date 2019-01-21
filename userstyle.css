@@ -99,7 +99,9 @@ domain('live.bilibili.com') {
       width: calc(1920px / 1) !important;
       max-width: calc(1920px / 1) !important;
     }
-    #app #bofqi.wide {
+    .bili-wrapper #bofqi.wide:not(.mini-player),
+    .player-wrap #bofqi.wide:not(.mini-player),
+    .bangumi-player:not(.mini-player) #bofqi.wide:not(.mini-player) {
       width: calc(1920px / 1) !important;
       height: calc(1080px / 1 + 46px) !important;
       position: static !important;
@@ -114,10 +116,6 @@ domain('live.bilibili.com') {
     .danmaku-box[style='height: 963px;'],
     .danmaku-box[style='height: 963px;'] ~ div {
       display: none;
-    }
-    #app #bofqi {
-      width: calc(1600px / 1) !important;
-      height: calc(900px / 1 + 46px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
@@ -175,7 +173,9 @@ domain('live.bilibili.com') {
       width: calc(1920px / 1.25) !important;
       max-width: calc(1920px / 1.25) !important;
     }
-    #app #bofqi.wide {
+    .bili-wrapper #bofqi.wide:not(.mini-player),
+    .player-wrap #bofqi.wide:not(.mini-player),
+    .bangumi-player:not(.mini-player) #bofqi.wide:not(.mini-player) {
       width: calc(1920px / 1.25) !important;
       height: calc(1080px / 1.25 + 46px) !important;
       position: static !important;
@@ -190,10 +190,6 @@ domain('live.bilibili.com') {
     .danmaku-box[style='height: 963px;'],
     .danmaku-box[style='height: 963px;'] ~ div {
       display: none;
-    }
-    #app #bofqi {
-      width: calc(1600px / 1.25) !important;
-      height: calc(900px / 1.25 + 46px) !important;
     }
     .player-box .bili-wrapper:not(.mini-player),
     .video-box-module .bili-wrapper:not(.mini-player),
