@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Nullizer/bilibili-morewide#readme",
   "dependencies": {
-    "node-sass": "^6.0.0"
+    "node-sass": "^8.0.0"
   }
 }
